@@ -38,6 +38,10 @@
                 line-height: 1.2
             }
 
+            h3 {
+                font-size: 2rem;
+            }
+
             p {
                 color: #c1c1d2;
             }
@@ -63,17 +67,14 @@
             .game-embed {
                 display: flex;
                 flex-flow: row;
+                align-items: center;
                 margin-bottom: 2rem;
             }
 
-            @media (width < 700px) {
-                .game-embed {
-                    flex-flow: column;
-                }
-                 
-                .game-embed iframe {
-                    margin-top: 16px;
-                }
+            .game-embed iframe {
+                border: 2px dashed #333346;
+                border-radius: 8px;
+                padding-bottom: 5px;
             }
 
             .game-embed h3 {
@@ -86,17 +87,31 @@
                 line-height: 1;
                 font-size: 1.5rem;
                 margin-top: 0px;
-                padding-right: 20px;
             }
 
             .game-embed footer {
                 margin-top: auto;
+                padding-top: 0.5rem;
                 font-style: italic;
                 font-size: 1.25rem;
             }
 
             .game-embed .left {
-                margin-right: auto;
+                padding: 0 20px;
+            }
+
+            @media (width < 700px) {
+                .game-embed {
+                    flex-flow: column;
+                }
+                 
+                .game-embed iframe, .game-embed .left {
+                    margin-top: 16px;
+                }
+
+                h1, h2, h3, p, footer {
+                    text-align: center;
+                }
             }
 
         </style>
@@ -106,7 +121,7 @@
             <h1>
                 Rjley
             </h1>
-            <p class="tagline"> Game Designer - rileylyman@gmail.com - <a>https://rjley.itch.io</a> </p>
+            <p class="tagline"> Game Designer &middot; rileylyman@gmail.com &middot; <a href="https://rjley.itch.io">rjley.itch.io</a> </p>
         </header>
 
         <h2>
@@ -120,76 +135,76 @@
             Selected Games
         </h2>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/4164806?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Solace </h3>
                 <p> Explore a dying world in this atmospheric 2D puzzle-platforming adventure. </p>
-                <footer> Winner, That Game Jam #01. Team role: Programmer, Designer, Sound Designer, Tech Artist. </footer>
+                <footer> Winner, <a href="https://itch.io/jam/thatgamejam01/rate/4164806">That Game Jam #01</a>. Programmer, Designer, Sound Designer, Tech Artist. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/4164806?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/4522358?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Deeptower </h3>
                 <p> Boot up a lost RPG from the 90's in this dungeon-crawling meta-narrative ARG. </p>
-                <footer> MFA semester-long group project. Team role: Programmer, Designer, Tech Artist. </footer>
+                <footer> MFA semester-long group project. Programmer, Designer, Tech Artist. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/4522358?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/4822026?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Dungeons @ Work </h3>
                 <p> Fight your way up the corporate ladder in this deck-building roguelite. </p>
-                <footer> Submission to GMTK Game Jam 2026. Team role: Programmer, Designer. </footer>
+                <footer> Top 2% <a href="https://itch.io/jam/gmtk-jam-2026/rate/4822026">GMTK Game Jam 2026</a>. Programmer, Designer. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/4822026?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/4995963?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Pelagius </h3>
                 <p> Unravel a mystery through a security terminal interface. </p>
                 <footer> A prototype made in 1 week. Solo project. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/4995963?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/4529025?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Omni Sort </h3>
                 <p> Process ever increasing batches of data in this short incremental game. </p>
-                <footer> Solo project. </footer>
+                <footer> <a href="https://bsky.app/profile/literallyaking.com/post/3mo74xslpj22v">Economics for Game Designers</a> final project. Solo. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/4529025?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/3995109?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Heart Dance </h3>
                 <p> Spin to the beat in this short rhythm game. </p>
                 <footer> Solo project. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/3995109?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/5087558?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> A Late Afternoon On The Farm </h3>
                 <p> Explore a farmstead on a late autumn afternoon. </p>
                 <footer> A prototype made in 1 week. Solo project. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/5087558?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
         <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed/5408954?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=1a1a24" width="208" height="167"> </iframe>
             <div class="left"> 
                 <h3> Marshmallows </h3>
                 <p> Take a load off and roast a marshmallow in this cozy slice-of-life vignette</p>
                 <footer> A prototype made in 1 week. Solo project. </footer>
             </div>
-            <iframe frameborder="0" src="https://itch.io/embed/5408954?bg_color=1a1a24&amp;fg_color=c1c1d2&amp;link_color=6a6ad4&amp;border_color=535373" width="208" height="167"> </iframe>
         </div>
 
 
         <footer>
-            Copyright © 2026 Riley Lyman
-            <br/>
-            AI will never have a place in my creative process.
+            I use no AI whatsoever in my creative process.
             This site was made in plain-old HTML and designed with the help of the <a href="https://lospec.com/palette-list/gothic-bit">Gothic Bit</a> palette.
+            <br/>
+            Copyright © 2026 Riley Lyman
         </footer>
     </body>
 </html>
